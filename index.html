@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>الإشعارات</title>
+
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+
+<script>
+window.OneSignalDeferred = window.OneSignalDeferred || [];
+
+OneSignalDeferred.push(async function(OneSignal) {
+  await OneSignal.init({
+    appId: "e0f17c14-3a30-41e7-a55a-609b467c67ad",
+
+    notifyButton: {
+      enable: true,
+    }
+  });
+});
+</script>
+
+<style>
+body {
+  background:#121212;
+  color:white;
+  text-align:center;
+  padding-top:100px;
+  font-family:sans-serif;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>🔔 نظام الإشعارات</h2>
+<p>اضغط على الجرس لتفعيل الإشعارات</p>
+
+</body>
+</html>
